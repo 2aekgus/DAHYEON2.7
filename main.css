@@ -1,0 +1,357 @@
+@charset "UTF-8";
+@import "compass/css3";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+	width: 50%;
+    margin-top:15px;
+	margin-bottom: 15px;
+	margin-left: 25%;
+    padding:0;
+	text-align:center;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*
+	End of reset code
+	End of reset code
+	End of reset code
+	End of reset code
+*/
+
+#page-wrap {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#header {
+	margin-top:50px;
+	margin-bottom: 25px;
+	width: 100%;
+}
+
+
+/* Navigation */
+
+nav {
+    overflow:hidden;
+	text-align: left;
+
+}
+
+nav ul {
+    list-style:none;
+}
+
+nav ul li {
+	display:inline;
+	margin-right: 0px;
+}
+
+nav ul li {
+}
+
+nav a:link, nav a:visited {
+	color:#000;
+	font-weight:;
+}
+/* End Navigation */
+
+
+
+#content {
+	width: 100%;
+	margin-right: auto; margin-left: auto;
+
+}
+
+#breakdown {
+
+}
+
+img {
+	margin: 3px;
+}
+video {
+	margin: 3px;
+}
+
+.info {
+	width: ;
+
+
+}
+.logo {
+	margin:0px;
+	width: 65px;
+
+}
+.subpage {
+
+}
+
+.dp {
+	width: 250px;
+	margin-right: 20px;
+	margin-top:-2px;
+	float:left;
+
+}
+
+.button {
+	font-size: 13px;
+	font-family: 'FFBauWeb', serif;
+	
+}
+
+
+.float {
+  -webkit-animation-name: Floating;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes Floating{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 7px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 0px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-image: url("");
+	background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+	background-color: #FFFFFF;
+	padding-bottom: 60px;
+	font-size: 13px;
+	line-height: 16px;
+	font-family: 'FFBauWeb', serif;
+}
+
+a:link {
+	font-family: 'FFBauWeb', serif;
+	color: #000;
+	text-decoration: none;
+
+	-webkit-transition: opacity 500ms ease-out;
+	-moz-transition: opacity 500ms ease-out;
+	-o-transition: opacity 500ms ease-out;
+	-ms-transition: opacity 500ms ease-out;
+	transition: opacity 500ms ease-out;
+}
+
+a:hover {
+	color: #323232;
+	text-decoration: none;
+	
+	-webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+	opacity: 0.6;
+	cursor: default;
+}
+
+a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+p {
+	font-family: 'FFBauWeb', serif;
+	font-size: 13px;
+	line-height: 16px;
+	color: #252525;
+}
+
+/**
+ * Footer Styles
+ */
+
+.footer {
+	position: fixed;
+	bottom: 20px;
+	width: 125px;
+}
+.footer a:link, .footer a:visited {
+}
+
+@media screen and (max-width : 420px ){
+
+	#page-wrap {
+	width: 300px;
+	margin: 0 auto;
+	}
+	
+	.subpage {
+			width: 100%;
+		}
+	.subpage embed {
+			padding-bottom: 56.25%; /* 16:9 */
+	}
+}
+
+@media screen and (min-width:421px) and (max-width:736px) {
+
+	#page-wrap {
+	width: 550px;
+	margin: 0 auto;
+	}
+	
+	
+	.subpage {
+			width: 100%;
+		}
+	.subpage embed {
+			padding-bottom: 56.25%; /* 16:9 */
+
+	}
+
+}
+
+.fadeIn {
+        /* CSS needed for animation
+        ---------------------------------------------------- */
+        opacity:0;
+        -webkit-animation:fadeIn ease-in 1;
+        -moz-animation:fadeIn ease-in 1;
+        -o-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+        -webkit-animation-fill-mode:forwards;
+        -moz-animation-fill-mode:forwards;
+        -o-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+	
+}
+
+.fadeIn-1 {
+	
+        -webkit-animation-duration:500ms;
+        -moz-animation-duration:500ms;
+        -o-animation-duration:500ms;
+        animation-duration:500ms;
+}
+
+.fadeDelay {
+        -webkit-animation-delay:500ms;
+        -moz-animation-delay:500ms;
+        -o-animation-delay:500ms;
+        animation-delay:500ms;
+}
+
+/* Key Frames
+---------------------------------------------------- */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
