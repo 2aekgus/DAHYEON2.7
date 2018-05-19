@@ -30,6 +30,15 @@
 
   ga('create', 'UA-91739859-1', 'auto');
   ga('send', 'pageview');
+
+  function myFunction() {
+    var x = document.getElementById("header");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
 </script>
 
 </head>
@@ -37,17 +46,16 @@
 <body>
 
 <div id="page-wrap">
-
-    
-    <div id="header">
+    <div id="header" class="topnav">
     
      <nav>
-    <ul>
-    	<li style="margin-right:80px;"><a href="index.html"><span style="font-family: 'FFBauWebBold'; font-size: 12px;">ALEXIS LIM</span></li>
-		<li style="margin-right:20px;"><a href="work.html">Work</a></li>
-    	<li style="margin-right:20px;"><a href="reel.html">Reel</a></li>
-		<li style="margin-right:20px;"><a href="info.html">Info</a></li>
-	</ul>
+    	<a href="index.html" class="active" style="margin-right:80px;"><span style="font-family: 'FFBauWebBold'; font-size: 12px;">ALEXIS LIM</span>
+		<a href="work.html" style="margin-right:20px;">Work</a>
+    	<a href="reel.html" style="margin-right:20px;">Reel</a>
+		<a href="info.html" style="margin-right:20px;">Info</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
     </nav>
 		
 	</div>
